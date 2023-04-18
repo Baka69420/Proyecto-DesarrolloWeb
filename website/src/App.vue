@@ -1,30 +1,54 @@
+<script>
+import HeaderApp from '@/components/HeaderApp.vue'
+import FooterApp from '@/components/FooterApp.vue'
+
+export default {
+  components: {
+    HeaderApp,
+    FooterApp
+  }
+}
+</script>
+
 <template>
-  <nav>
-    <router-link :to="{name: 'home'}">Home</router-link> |
-    <router-link :to="{name: 'about'}">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="background">
+    <div id="content">
+      <header>
+        <HeaderApp/>
+      </header>
+      <main>
+        <router-view/>
+      </main>
+      <footer>
+        <FooterApp/>
+      </footer>
+    </div>
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+  #content {
+    margin: 0 auto;
+    background-color: whitesmoke;
+  }
+
+  header {
+    background-color: #ffa753;
+  }
+
+  footer {
+    background-color: #fecb70;
+  }
+
+  @media only screen and (max-width: 1000px) {
+  #content {
+    width: 100%;
+  }
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+@media only screen and (min-width: 1000px) {
+  #content {
+    width: 70%;
+  }
 }
 </style>
