@@ -1,19 +1,15 @@
 <template>
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            <li data-bs-target="#carouselId" v-for="key in images" :key="key" :class="key==0 ? 'active' : ''" :data-bs-slide-to="key"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img src="holder.js/900x500/auto/#777:#555/text:First slide" class="w-100 d-block" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img src="holder.js/900x500/auto/#666:#444/text:Second slide" class="w-100 d-block" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img src="holder.js/900x500/auto/#666:#444/text:Third slide" class="w-100 d-block" alt="Third slide">
+            <div class="carousel-item" v-for="item, key in images" :key="key" :class="key==0 ? 'active' : ''">
+                <img :src="item['img-url']" class="w-100 d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>{{ item["title"] }}</h1>
+                    <p v-if="item['descripcion'] != ''">{{ item["descripcion"] }}</p>
+                </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
@@ -36,8 +32,15 @@
         },
         methods: {
             obtenerImagenes(){
-                
+                fetch("https://baka69420.github.io/Proyecto-DesarrolloWeb/api/carousel-api.json").then(response => {
+                    if(response.ok) return response.json();
+                }).then(json => {
+                    this.images = json;
+                })
             }
+        },
+        beforeMount(){
+            this.obtenerImagenes();
         }
     }
 </script>
