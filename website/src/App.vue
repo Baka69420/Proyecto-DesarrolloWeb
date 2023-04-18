@@ -41,14 +41,14 @@ export default {
   }
 
   @media only screen and (max-width: 1000px) {
-  #content {
-    width: 100%;
+    #content {
+      width: 100%;
+    }
   }
-}
 
-@media only screen and (min-width: 1000px) {
-  #content {
-    width: 70%;
+  @media only screen and (min-width: 1000px) {
+    #content {
+      width: 70%;
+    }
   }
-}
 </style>
