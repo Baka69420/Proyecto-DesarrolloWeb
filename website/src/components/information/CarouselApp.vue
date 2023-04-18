@@ -1,8 +1,5 @@
 <template>
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselId" v-for="key in images" :key="key" :class="key==0 ? 'active' : ''" :data-bs-slide-to="key"></li>
-        </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item" v-for="item, key in images" :key="key" :class="key==0 ? 'active' : ''">
                 <img :src="item['img-url']" class="w-100 d-block">
