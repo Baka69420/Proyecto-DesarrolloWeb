@@ -1,5 +1,5 @@
 <script>
-import CarouselApp from '@/components/information/CarouselApp.vue'
+import CarouselApp from '@/components/api-connected/CarouselApp.vue'
 import StoreInfoApp from '@/components/information/StoreInfoApp.vue'
 //import HotProductsApp from '@/components/information/CarouselApp.vue'
 
