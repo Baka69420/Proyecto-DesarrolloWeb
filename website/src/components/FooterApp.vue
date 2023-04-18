@@ -1,6 +1,6 @@
 <template>
   <div id="styling">
-      <h5 id="creator">Created by:<br>Rafael Alvarado</h5>
+      <h5 id="creator">Creado por:<br>Rafael Alvarado</h5>
       <div id="socials">
         <a href="https://www.facebook.com/Pastelilloscarrizal"><img src="@/assets/images/Facebook.png" alt=""></a>
         <a href="https://www.instagram.com/pastelillos_carrizal_/"><img src="@/assets/images/Instagram.png" alt=""></a>
@@ -13,6 +13,7 @@
 #styling {
 padding: 10px 50px;
 display: flex;
+text-align: center;
 }
 
 #socials{
