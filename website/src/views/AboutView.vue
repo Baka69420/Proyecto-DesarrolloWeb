@@ -1,17 +1,31 @@
+<script>
+import StoreHistoryApp from '@/components/information/StoreHistoryApp.vue'
+import CreatorInfoApp from '@/components/information/CreatorInfoApp.vue'
+
+export default {
+  components: {
+    StoreHistoryApp,
+    CreatorInfoApp
+  }
+}
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div id="more-info">
+    <div id="store-history">
+      <StoreHistoryApp/>
+    </div>
+    <div id="web-creator">
+      <CreatorInfoApp/>
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
-// export default {
-//   name: 'HomeView',
-//   components: {
-//     HelloWorld
-//   }
-// }
-</script>
+<style>
+  #more-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+</style>
