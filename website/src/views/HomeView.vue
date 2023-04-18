@@ -1,9 +1,12 @@
 <script>
 import CarouselApp from '@/components/information/CarouselApp.vue'
+import StoreInfoApp from '@/components/information/StoreInfoApp.vue'
+//import HotProductsApp from '@/components/information/CarouselApp.vue'
 
 export default {
   components: {
-    CarouselApp
+    CarouselApp,
+    StoreInfoApp
   }
 }
 </script>
@@ -14,8 +17,8 @@ export default {
   </div>
 
   <div id="more-info">
-    <div id="local-info">
-
+    <div id="store-info">
+      <StoreInfoApp/>
     </div>
     <div id="hot-products">
 
