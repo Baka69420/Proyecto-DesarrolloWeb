@@ -1,4 +1,7 @@
 <template>
+    <div id="title">
+        <h1>Creador de la pagina web</h1>
+    </div>
     <div id="creator-info">
         <div id="profile-pic">
             <img src="@/assets/images/creator-pic.png" alt="Picture of the Creator">
@@ -13,6 +16,13 @@
 </template>
 
 <style scoped>
+#title {
+    color: #ffa753;
+    text-align: center;
+    border-bottom: 2px solid #ffa753;
+    margin-bottom: 20px; 
+}
+
 #creator-info {
     margin: 0 auto;
     height: 125px;

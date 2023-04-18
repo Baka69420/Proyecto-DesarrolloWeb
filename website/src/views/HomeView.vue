@@ -25,3 +25,12 @@ export default {
     </div>
   </div>
 </template>
+
+<style>
+  #more-info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+</style>
