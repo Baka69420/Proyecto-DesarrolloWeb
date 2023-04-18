@@ -9,7 +9,6 @@ export default {
 </script>
 
 <template>
-  <h1>This is an home page</h1>
   <div id="carrousel">
     <CarouselApp/>
   </div>
