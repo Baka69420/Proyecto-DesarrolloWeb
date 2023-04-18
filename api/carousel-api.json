@@ -1,7 +1,12 @@
 [
     {
-        "title": "Local de Pastelillos Costa Rica",
+        "title": "Local de Pastelillos Carrizal",
         "descripcion": "",
         "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/carousel/carousel-1.png"
+    },
+    {
+        "title": "Pastelillos 100% Carrizaleña",
+        "descripcion": "Con los mejores pastelillos de Carrizal",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/carousel/carousel-2.png"
     }
 ]
