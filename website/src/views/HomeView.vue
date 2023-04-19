@@ -1,11 +1,13 @@
 <script>
 import CarouselApp from '@/components/api-connected/CarouselApp.vue'
+import ProductQualityApp from '@/components/information/ProductQualityApp.vue'
 import StoreInfoApp from '@/components/information/StoreInfoApp.vue'
 import HotProductsApp from '@/components/api-connected/HotProductsApp.vue'
 
 export default {
   components: {
     CarouselApp,
+    ProductQualityApp,
     StoreInfoApp,
     HotProductsApp
   }
@@ -16,7 +18,9 @@ export default {
   <div id="carrousel">
     <CarouselApp/>
   </div>
-
+  <div id="product-quality">
+    <ProductQualityApp/>
+  </div>
   <div id="main-info">
     <div id="store-info">
       <StoreInfoApp/>
@@ -28,6 +32,10 @@ export default {
 </template>
 
 <style>
+#product-quality {
+  padding: 20px;
+}
+
 #main-info{
   padding: 20px;
   display: flex;
