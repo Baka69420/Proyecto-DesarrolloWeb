@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "Minidonitas Chocolate",
+        "description": "Minidonitas bañadas en chocolate con topping de arroz con chocolate blanco. Se vende en 4 unidades (₡1100) o en 8 unidades (₡2000)",
+        "cost": "₡250",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/minidonitas-chocolate.png"
+    },
+    {
+        "id": 1,
+        "name": "Minidonitas Leche Condensada",
+        "description": "Minidonitas bañadas en leche condensada con topping de coco. Se vende en 4 unidades (1100) o en 8 unidades (2000)",
+        "cost": "₡250",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/minidonitas-leche-condensada.png"
+    },
+    {
+        "id": 2,
+        "name": "Minidonitas Caramelo",
+        "description": "Minidonitas bañadas en caramelo con topping de confitura de colores. Se vende en 4 unidades (1100) o en 8 unidades (2000)",
+        "cost": "₡250",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/minidonitas-caramelo.png"
+    }
+]
