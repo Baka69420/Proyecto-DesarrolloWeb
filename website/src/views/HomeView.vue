@@ -38,11 +38,27 @@ export default {
   #main-info {
     flex-direction: column;
   }
+
+  #main-info #store-info {
+    flex-basis: 100%;
+  }
+
+  #main-info #hot-products {
+    flex-basis: 100%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   #main-info {
     flex-direction: row;
+  }
+
+  #main-info #store-info {
+    flex-basis: 70%;
+  }
+
+  #main-info #hot-products {
+    flex-basis: 30%;
   }
 }
 </style>

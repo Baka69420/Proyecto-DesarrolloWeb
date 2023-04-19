@@ -45,11 +45,19 @@ export default {
   #contact-info {
     flex-direction: column;
   }
+
+  #contact-info #contact-socials, #contact-info #email-form {
+   flex-basis: 100%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   #contact-info {
     flex-direction: row;
+  }
+  
+  #contact-info #contact-socials, #contact-info #email-form {
+   flex-basis: 50%;
   }
 }
 </style>
