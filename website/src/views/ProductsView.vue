@@ -9,11 +9,16 @@ export default {
 </script>
 
 <template>
-    <div class="products">
-      <h1>This is an products page</h1>
+    <div id="products-list">
       <ProductsListApp/>
     </div>
 </template>
+
+<style scoped>
+#products-list{
+  padding: 20px;
+}
+</style>
   
 
   
