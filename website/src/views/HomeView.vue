@@ -1,12 +1,13 @@
 <script>
 import CarouselApp from '@/components/api-connected/CarouselApp.vue'
 import StoreInfoApp from '@/components/information/StoreInfoApp.vue'
-//import HotProductsApp from '@/components/information/CarouselApp.vue'
+import HotProductsApp from '@/components/api-connected/HotProductsApp.vue'
 
 export default {
   components: {
     CarouselApp,
-    StoreInfoApp
+    StoreInfoApp,
+    HotProductsApp
   }
 }
 </script>
@@ -16,21 +17,32 @@ export default {
     <CarouselApp/>
   </div>
 
-  <div id="more-info">
+  <div id="main-info">
     <div id="store-info">
       <StoreInfoApp/>
     </div>
     <div id="hot-products">
-
+      <HotProductsApp/>
     </div>
   </div>
 </template>
 
 <style>
-  #more-info{
-    padding: 20px;
-    display: flex;
+#main-info{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #main-info {
     flex-direction: column;
-    gap: 20px;
   }
+}
+
+@media only screen and (min-width: 1000px) {
+  #main-info {
+    flex-direction: row;
+  }
+}
 </style>
