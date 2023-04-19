@@ -8,6 +8,7 @@
         </div>
         <div id="course-info">
             <p><strong>Estudiante:</strong> Rafael Eduardo Alvarado Zuñiga</p>
+            <p><strong>Correo:</strong> raalvaradozu@est.utn.ac.cr</p>
             <p><strong>Cedula:</strong> 2-0833-0156</p>
             <p><strong>Curso:</strong> Diseño de Aplicaciones Web (ISW-512)</p>
             <p><strong>Profesor:</strong> Rafael Eduardo Alvarado Zuñiga</p>
@@ -32,7 +33,7 @@
 }
 
 #profile-pic {
-    height: 125px;
+    height: 150px;
     border-radius: 5px;
     border: double black 2px;
     overflow: hidden;
