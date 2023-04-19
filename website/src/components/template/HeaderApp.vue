@@ -46,6 +46,7 @@
 
 #branding h1 {
   margin-left: auto;
+  color: white;
 }
 
 @media only screen and (max-width: 575px) {
