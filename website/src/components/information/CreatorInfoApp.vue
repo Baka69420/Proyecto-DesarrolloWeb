@@ -25,7 +25,6 @@
 
 #creator-info {
     margin: 0 auto;
-    height: 125px;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -33,7 +32,7 @@
 }
 
 #profile-pic {
-    height: 100%;
+    height: 125px;
     border-radius: 5px;
     border: double black 2px;
     overflow: hidden;
@@ -45,5 +44,17 @@
 
 #course-info p {
     margin: 5px;
+}
+
+@media only screen and (max-width: 575px) {
+  #creator-info {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+    #creator-info {
+      flex-direction: row;
+    }
 }
 </style>
