@@ -1,12 +1,12 @@
 <script>
 import ContactInfoApp from '@/components/information/ContactInfoApp.vue'
-import EmailFormApp from '@/components/api-connected/EmailFormApp.vue'
+import FeedbackApp from '@/components/api-connected/FeedbackApp.vue'
 import MapApp from '@/components/information/MapApp.vue'
 
 export default {
   components: {
     ContactInfoApp,
-    EmailFormApp,
+    FeedbackApp,
     MapApp
   }
 }
@@ -19,7 +19,7 @@ export default {
           <ContactInfoApp/>
         </div>
         <div id="email-form">
-          <EmailFormApp/>
+          <FeedbackApp/>
         </div>
       </div>
       <div id="map-location">
