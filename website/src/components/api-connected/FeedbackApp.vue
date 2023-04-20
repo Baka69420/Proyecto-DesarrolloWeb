@@ -97,23 +97,4 @@ form button {
     height: 40px;
     margin: 10px auto;
 }
-
-/* form {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 0 auto;
-}
-
-form * {
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-form #buttons {
-    width: 100%;
-} */
 </style>

@@ -24,6 +24,11 @@ export default {
       </footer>
     </div>
   </div>
+  <div id="audio">
+    <audio autoplay>
+      <source src="@/assets/audios/maxwell-song.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 </template>
 
 <style scoped>
