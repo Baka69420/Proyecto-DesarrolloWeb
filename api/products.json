@@ -9,15 +9,43 @@
     {
         "id": 1,
         "name": "Minidonitas Leche Condensada",
-        "description": "Minidonitas bañadas en leche condensada con topping de coco. Se vende en 4 unidades (1100) o en 8 unidades (2000)",
+        "description": "Minidonitas bañadas en leche condensada con topping de coco. Se vende en 4 unidades (₡1100) o en 8 unidades (₡2000)",
         "cost": "₡250",
         "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/minidonitas-leche-condensada.png"
     },
     {
         "id": 2,
         "name": "Minidonitas Caramelo",
-        "description": "Minidonitas bañadas en caramelo con topping de confitura de colores. Se vende en 4 unidades (1100) o en 8 unidades (2000)",
+        "description": "Minidonitas bañadas en caramelo con topping de confitura de colores. Se vende en 4 unidades (₡1100) o en 8 unidades (₡2000)",
         "cost": "₡250",
         "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/minidonitas-caramelo.png"
+    },
+    {
+        "id": 3,
+        "name": "Empanada Regular",
+        "description": "Empanada Rellena de Queso o Carne Mechada.",
+        "cost": "₡750",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/empanada.png"
+    },
+    {
+        "id": 4,
+        "name": "Empanada Arreglada",
+        "description": "Empanada rellena de Queso o Carne Mechada con Repollo y Salsa de Tomate y Mayonesa.",
+        "cost": "₡1000",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/empanada-arreglada.png"
+    },
+    {
+        "id": 5,
+        "name": "Triangulos Rellenos",
+        "description": "4 Triangullos rellenos de diferentes sabores (Pizza, Carne Mechada, Papa con Chorizo Picante o Papa con Chorizo y chicasquil).",
+        "cost": "₡1000",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/triangulos-rellenos.png"
+    },
+    {
+        "id": 6,
+        "name": "Pastelillo",
+        "description": "Pastelillo de diferentes sabores como Pizza, Carne Mechada, Papa con Chorizo Picante o Papa con Chorizo y chicasquil",
+        "cost": "₡850",
+        "img-url": "https://baka69420.github.io/Proyecto-DesarrolloWeb/api/images/products/pastelillo.png"
     }
 ]
