@@ -1,4 +1,6 @@
 <script>
+import router from '@/router';
+
     export default {
         data(){
             return {
@@ -12,6 +14,9 @@
                 }).then(json => {
                     this.products = json;
                 })
+            },
+            verProducto(productoID){
+                router.push({name:'product', params:{ productID: productoID }});
             }
         },
         beforeMount(){
@@ -25,7 +30,7 @@
         <h1>Todos los productos</h1>
     </div>
     <div id="products">
-        <div v-for="product in products" class="product" :key="product['id']">
+        <div v-for="product in products" v-on:click="verProducto(product['id'])"  class="product" :key="product['id']">
             <img :src="product['img-url']" :alt="'Photo of' + product['name']">
             <h5>{{ product['name'] }}</h5>
             <p>Costo: {{ product['cost'] }}</p>
